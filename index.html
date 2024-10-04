@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Earth Gen</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="./assets/img/background3.jpg" rel="icon">
+  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,700i%7CRaleway:300,300i,400,400i,500,500i,600,600i,700,700i%7CPoppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume - v4.9.2
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#overview" class="nav-link scrollto"><i class="bx bx-objects-horizontal-right"></i> <span>Overview</span></a></li>
+        <li><a href="#background" class="nav-link scrollto"><i class="bx bx-book"></i>
+            <span>Background</span></a>
+        </li>
+        <li><a href="#design" class="nav-link scrollto"><i class="bx bxl-codepen"></i>
+            <span>Design and Implementation</span></a>
+        </li>
+        <li><a href="#results" class="nav-link scrollto"><i class="bx bx-bar-chart-alt"></i> <span>Results</span></a></li>
+        <li><a href="#resources" class="nav-link scrollto"><i class="bx bx-file"></i> <span>Resources</span></a>
+        </li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section =======  -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="fade-in">
+      <h1>Earth Gen</h1>
+      <h2>Generating Planetary Terrain using Diffusion Models and Texture Synthesis</h2>
+
+      <div>
+        <a href="#main" class="scrollto active btn btn-link"><u>Learn more</u></a>
+        <!-- <a href="https://huggingface.co/spaces/Xenova/terrain-ml" class="btn btn-link  mx-4"
+          target="_blank"><u>Demo</u></a> -->
+      </div>
+    </div>
+
+
+    <div class="parallax-container">
+      <div class="parallax" data-parallax="0.9"></div>
+      <!-- <div class="parallax" data-parallax="0.7"></div>
+      <div class="parallax" data-parallax="0.7"></div>
+      <div class="parallax" data-parallax="0.6"></div>
+      <div class="parallax" data-parallax="0.5"></div>
+      <div class="parallax" data-parallax="0.3"></div>
+      <div class="parallax" data-parallax="0"></div> -->
+    </div>
+
+  </section>
+
+  <main id="main">
+
+    <!-- ======= Overview Section ======= -->
+    <section id="overview" class="overview">
+      <div class="container" data-aos="fade-right" data-aos-delay="100">
+
+        <div class="section-title">
+          <h2>Overview</h2>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <p style="text-align: justify;">
+                The creation of digital planets is a critical component of virtual environment design, widely utilized in industries 
+                such as film and video games. To achieve compelling virtual worlds, it is essential to generate diverse and realistic 
+                landscapes that accurately represent the geomorphological features found in nature. However, replicating the complex 
+                physical processes that shape real-world terrain presents significant challenges in artificial terrain generation.
+
+                Traditional simulation and procedural methods for digital planet creation fail to achieve the trifecta of
+                realistic, efficient, and adaptable terrain generation due to algorithmic and computational constraints.
+              </p>
+              <br>
+              <p style="text-align: justify;">
+                To address these limitations, we introduce a machine learning model and a texture synthesis method.
+                
+                The machine learning model is a sketch-to-terrain system for planetary terrain 
+                generation. Our system enhances realism by training models on real-world datasets, including elevation maps, satellite imagery, 
+                landform classifications, and vegetation indices, offering users greater flexibility and control in creating dynamic and authentic landscapes.
+
+                The texture synthesis method is a terrain generation system that takes in an input terrain
+                (exemplar) and creates a synthesised output terrain with characteristics
+                similar to the input terrain. When completed on a global scale, this method results in the generation of planets.
+              </p>
+            </div>
+          </div>
+
+          <br>
+          <h3 class="mt-4">Project Goals</h3>
+          <div class="row goals pt-1">
+            <div class="col-lg-4 goals-item">
+              <h4>Shared</h4>
+              <ul>
+                <li>Generate a dataset of Satellite Images and DEMs.</li>
+                <li>Complete all project deliverables before deadlines (Paper, Demonstrations, Poster, Website, etc.) </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 pt-2 pt-lg-0 goals-item">
+              <h4>Christopher</h4>
+              <ul>
+                <li>Add Landscape Classification Images to dataset.</li>
+                <li>Generate low-detail DEMs derived from the DEM dataset.</li>
+                <li>Train and adapt generative diffusion models on pairs of DEM tiles and Landscape Classification images.</li>
+                <li>Evaluate the scalability, realism, performance, and control of the globe sketching interface and the generated terrain.</li>
+              </ul>
+            </div>
+            <div class="col-lg-4 pt-2 pt-lg-0 goals-item">
+              <h4>Sam</h4>
+              <ul>
+                <li>Develop a complete texture synthesis method for terrain generation.</li>
+                <li>Develop a globe interface for the illustration of generated planets.</li>
+                <li>Evaluate the realism, performance and scalability of the texture synthesis method.</li>
+                <li>Evaluate the user control and distortion of the globe interface.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Overview Section -->
+
+    <!-- ======= Background Section ======= -->
+    <section id="background">
+      <div class="container" data-aos="fade-right" data-aos-delay="100">
+
+        <div class="section-title">
+          <h2>Background</h2>
+          <h3>Terrain Representation</h3>
+
+          <p>Digital Elevation Models (DEMs) are 3D representations of a terrain's surface, typically derived from remote sensing data, 
+            that capture the elevation of land features at various geographic points. Satellite images, on the other hand, are visual 
+            representations of Earth's surface captured by sensors on satellites, providing detailed information on land cover, vegetation, 
+            and environmental changes.</p>
+          <br>
+
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+
+              <div class="row align-items-center">
+                <div class="col-1"></div>
+                <div class="col-5">
+                  <img class="w-100" src="./assets/img/background/NASADEM.jpg" alt="">
+                </div>
+                <div class="col-5">
+                  <br>
+                  <h4>Greyscale Images<br></h4>
+                  <h6>
+                    Channel images that represent changes in altitude.
+                  </h6>
+                  <em>darker = lower altitude</em><br>
+                  <em>lighter = higher altitude</em>
+                </div>
+                <div class="col-1"></div>
+
+              </div>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+
+              <div class="row align-items-center">
+                <div class="col-1"></div>
+                <div class="col-5">
+                  <img class="w-100" src="./assets/img/background/satellite.jpg" alt="">
+                </div>
+                <div class="col-5">
+                  <br>
+                  <h4>Satellite Images<br></h4>
+                  <h6>
+                    Channel images that represent landscape features.
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="mt-5">Diffusion Models</h3>
+
+          <p>Diffusion models work by gradually adding noise to data in a stepwise process and then learning to reverse this process 
+            to generate realistic outputs. When conditioned, additional information — such as class labels or guidance images — is incorporated 
+            into the reverse process, allowing the model to generate outputs that align with specific conditions or constraints, such as a 
+            particular terrain type or satellite imagery.
+          </p>
+
+          <div class="row align-items-center mt-3">
+            <div class="col-12">
+              Reverse Diffusion Process 
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1">
+              Noise
+            </div>
+            <div class="col-8">
+              <img class="w-100" src="./assets/img/background/diffusion.png" alt="">
+            </div>
+            <div class="col-1">
+              Output Image
+            </div>
+          </div>
+
+          <h3 class="mt-5">Texture Synthesis</h3>
+
+          <p>Texture synthesis methods reassemble regions of an input image to create an output image with similar characteristics. Texture 
+            synthesis methods for terrain generation include pixel-based and patch-based.
+          </p>
+
+          <div class="row align-items-center mt-3">
+            <div class="col-12">
+              Testure Synthesis Process 
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1">
+              Sample Image
+            </div>
+            <div class="col-8">
+              <img class="w-100" src="./assets/img/background/Synthesis.png" alt="">
+            </div>
+            <div class="col-1">
+              Output Image
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Background Section -->
+
+    <!-- ======= Design and Implementation Section ======= -->
+    <section id="design">
+      <div class="container" data-aos="fade-right" data-aos-delay="100">
+
+        <div class="section-title">
+          <h2>Design and Implementation</h2>
+          <h3>1. Data Collection</h3>
+          <p>
+            Elevation and satellite imagery were acquired from NASA’s Blue Marble Next Generation (BMNG) archive.
+
+            For the machine learning method, Classification data was acquired from the Global Land Cover by National Mapping Organizations (GLCNMO) and 
+            Normalized Difference vegetation index (NDVI) was acquired from NASA Earth Observations (NEO).<br>
+
+            We downloaded data at the resolution of 86,400 x 43,200 corresponding to ~500 metres per pixel at the equator.
+          </p>
+          <br>
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-clipboard-data"></i>
+                <div class="d-flex justify-content-center">
+                  <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
+                    class="purecounter">3</span>
+                  <span class="ms-2">GB</span>
+                </div>
+                <p>total data</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+              <div class="count-box">
+                <i class="bi bi-grid"></i>
+                <span data-purecounter-start="0.0" data-purecounter-end="20000" data-purecounter-duration="1"
+                  data-purecounter-separator="," class="purecounter"></span>
+
+                <p>tiles sampled</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+              <div class="count-box">
+                <i class="bi bi-journal-richtext"></i>
+                <span data-purecounter-start="0.0" data-purecounter-end="148940000" data-purecounter-duration="1"
+                  data-purecounter-separator="," class="purecounter"></span>
+                <p>area covered (km<sup>2</sup>) = global land cover</p>
+
+              </div>
+            </div>
+          </div>
+
+          <h3 class="mt-4">2. Globe Interface</h3>
+          <div class="row align-items-center">
+
+            <p class="col-lg-6">
+
+              The planet authoring interface is built using Blender's Python API, allowing users to interactively design 
+              terrain features on a globe. Users can select from 20 different landscape feature types and sketch on the 
+              spherical canvas, which generates terrain based on their input. The generated terrain tiles include both 
+              digital elevation models (DEMs) and satellite imagery, applied as displacement maps and textures, ensuring 
+              accurate visual representation of the terrain features on the globe. A quad sphere design was chosen to minimize 
+              distortions towards the poles.
+            </p>
+            <img class="col-lg-6" src="./assets/img/design/Spheres.png" alt="">
+          
+
+         
+
+          <div class="labelling mt-5">
+            <h3>3. Methods</h3>
+
+            <div class="row mt-3">
+
+              <div class="col-lg-6">
+                <h3>Diffusion Model</h3>
+                <h4>Architecture</h4>
+                <p style="text-align: justify;">
+                  The architecture of our planetary terrain generation system is built on time-conditioned U-Net models, 
+                  which are augmented with cross-attention layers and skip connections. These U-Nets work by gradually 
+                  reducing the resolution of feature maps, processing them through a bottleneck, and then upscaling them 
+                  back to their original resolution. The models are trained with the goal of progressively removing noise 
+                  from an image, enabling the creation of detailed terrain features.
+                  <br>
+                  <br>
+                  Conditional image generation is achieved by concatenating the conditional input, such as a landscape 
+                  classification or elevation map, with the noisy image at each timestep. This enables the network to 
+                  use the conditional input to guide the denoising process, resulting in terrain outputs that accurately 
+                  reflect the user's input. The architecture adapts to both small-scale (64x64 pixels) and large-scale 
+                  (256x256 pixels) terrain generation, providing flexibility in creating diverse planetary features.
+                  
+                </p>
+                <div class="mt-2">
+                  <img src="./assets/img/design/u-net-architecture.png" alt="" class="w-75 ">
+                  <div class="fst-italic">
+                  </div>
+                </div>
+                <br>
+                <br>
+                <h4>Training</h4>
+                <p style="text-align: justify;">
+                  The DDPM big VIE and DDPM big LC models were both trained to handle 256x256 pixel images, with the VIE 
+                  model incorporating vegetation index and elevation data, while the LC model used landscape classification 
+                  data. The VIE model was trained for 71,250 steps with a final loss of 0.0128, while the LC model required 
+                  111,000 steps, achieving a final loss of 0.0136. Both models used a cosine annealing learning rate scheduler 
+                  to ensure model stability and prevent overfitting during the training process.
+                </p>
+
+                <div class="col-8"></div>
+                  <img src="./assets/img/design/Example_Generation.png" alt="" class="w-75 ">
+                  <p class="col-12"></p>
+                    <em>
+                      Example of a generated terrain, using GLCNMO classification.
+                    </em>
+                  </p>
+                </div>
+
+              <!-- </div> -->
+              <div class="col-lg-6 mt-4 mt-lg-0">
+                <h3>Texture Synthesis</h3>
+                <h4>Architecture</h4>
+                <p style="text-align: justify;">
+                  We base our method on Lefebvre and Hoppe’s implementation because it has successfully generated high-quality terrain. We run our texture synthesis
+                  method in parallel to improve efficiency. For an exemplar size of 64x64, six processes running in parallel is optimal. Our texture synthesis
+                  method consists of four parts: upsampling, jitter, correction, and tiling. An important point is that the exemplar comprises colour
+                  values corresponding to the colour of each pixel. In contrast, the synthesised texture contains reference coordinates
+                  to a pixel in the exemplar. Therefore, the synthesised texture itself does not store its colour values.
+                  <br>
+                  <br>
+                  We apply upsampling, jitter, and correction algorithms to each level in a Gaussian stack to achieve high-quality synthesis. A Gaussian
+                  stack is a series of progressively blurred images at the same resolution, created without subsampling, to preserve fine details across
+                  different scales. The Gaussian stack is created by applying Gaussian filtering to an augmented exemplar to form the coarser levels. We
+                  double the exemplar’s dimensions to make the augmented exemplar.
+                </p>
+                <br>
+                <br>
+                <div class="mt-2">
+                  <img src="./assets/img/design/Gaussian Stack.png" alt="" class="w-75 ">
+                  <div class="fst-italic">
+                    <p class="col-12"></p>
+                    <em>
+                      Successive levels of our Gaussian stack illustrating decreasing filtering.
+                    </em>
+                  </p>
+                  </div>
+                </div>
+                  <br>
+                  <br>
+                <p style="text-align: justify;">
+                  Our synthesis method follows the same general process for all inputs. While traversing through the coarse-to-fine levels of the
+                  synthesised terrain and the exemplar in the Gaussian stack, we:
+                  <ol style="text-align: justify;">
+                  <li>Upsample the parent coordinates. Upsampling increases the resolution of the synthesised image.</li>
+                  <li>Randomise the synthesis coordinates using jitter. Jittering introduces variability and disrupts uniformity.</li> 
+                  <li>Correct pixel values through several passes. Correction visually refines the output image to smooth inconsistencies created by the jitter.</li>
+                  </ol>
+                </p>
+                <div class="col-8"></div>
+                  <img src="./assets/img/design/globe1.png" alt="" class="w-50 ">
+                  <p class="col-12"></p>
+                    <em>
+                      Desert planet generated using our texture synthesis method and globe interface.
+                    </em>
+                  </p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Design and Implementation Section -->
+
+
+    <!-- ======= Results Section ======= -->
+    <section id="results">
+      <div class="container text-center" data-aos="fade-right" data-aos-delay="100">
+
+        <div class="section-title">
+          <h2>Results</h2>
+        </div>
+        <div>
+          
+          <p>We evaluated our models and planetary sketching interface on a variety of terrain generation tasks:</p>
+          <div class="results-slider swiper mt-2" data-aos="fade-right" data-aos-delay="100">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="results-item">
+                  <h3>Diffusion Classification Guided Terrain Generation</h3>
+                  <h4>Generate terrain from a GLCMNO and NDVI classification</h4>
+                  <div class="row align-items-center">
+                    <img class="col-12" src="./assets/img/results/generated.png" alt="">
+
+                    <div class="col-2">
+                      Input
+                      <br>
+                      <div class="small-font">GLCMNO</div>
+                    </div>
+                    <div class="col-4">Outputs</div>
+                    <div class="col-2">
+                      Input
+                      <br>
+                      <div class="small-font">NDVI</div>
+                    </div>
+                    <div class="col-4">Outputs</div>
+
+                  </div>
+                  <br>
+                  <p>
+                    Diffusion Model: Our model exhibits impressive terrain generation capabilities, successfully creating a wide range of realistic 
+                    terrains that closely follow the classification guidance. However, while the generated terrains are plausible, 
+                    we observed that NDVI classification does not result in high-quality DEMs.
+                  </p>
+
+                </div>
+              </div><!-- End task item -->
+
+              <div class="swiper-slide">
+                <div class="results-item">
+                  <h3>Diffusion LPIPs Metric</h3>
+                  <h4>Learned Perceptual Image Patch Similarity (LPIPS) for generated terrain</h4>
+
+                  <div>
+                    <div class="row align-items-center">
+                      <img class="col-12" src="./assets/img/results/LPIPs2.png" alt="">
+                    </div>
+                  </div>
+                  <br>
+
+                  <p>
+                    Diffusion Model: Despite mixed results, largely influenced by the quality and quantity of training data, our research highlights 
+                    the challenge of accurately generating consistent terrain, as evidenced by the high LPIPs scores (where lower is better).
+                     Consequently, we conclude that classification is not an ideal technique for terrain authoring.
+                  </p>
+                </div>
+              </div><!-- End task item -->
+
+              
+              <div class="swiper-slide">
+                <div class="results-item">
+                  <h3>Diffusion Time Steps vs Inference time</h3>
+                  <h4>Inference time of the DDPM big and small models</h4>
+
+                  <div>
+                    <div class="row align-items-center">
+                      <img class="col-12" src="./assets/img/results/inference.png" alt="">
+                    </div>
+                  </div>
+                  <br>
+
+                  <p>
+                    Diffusion Model: The inference time for the DDPM models significantly decreases as the number of time steps is reduced. 
+                    While using 1000 time steps results in high-quality terrain but longer inference times (just over a minute), 
+                    reducing the steps to 50 or less drops the inference time to a few seconds, though this leads to lower-quality 
+                    outputs dominated by noise.
+                  </p>
+                </div>
+              </div><!-- End task item -->
+
+              
+
+              <div class="swiper-slide">
+                <div class="results-item">
+                  <h3>Diffusion Globe Sketching Interface</h3>
+                  <h4>Illustrate user control of global terrain generation</h4>
+
+                  <div class="row align-items-center">
+                    <div class="col-2"></div>
+                    <img class="col-12" src="./assets/img/results/Globe.png" alt="">
+                  </div>
+                  <p>
+                    Diffusion Model: Our globe sketching interface generates terrain that aligns with user sketches based on a selection of 20 landscape types.
+                     While there are fewer distortions near the poles, the classification guidance's mixed results cause the individual tiles
+                      to not seamlessly integrate with each other.
+                  </p>
+                </div>
+              </div><!-- End task item -->
+
+              <div class="swiper-slide">
+                <div class="results-item">
+                  <h3>Texture Synthesis Planetary Categories</h3>
+                  <h4>Illustrates 4 types of generated planets using our Texture Synthesis method</h4>
+                  <br>
+                  
+                  <div class="row align-items-center">
+                    <img class="col-12" src="./assets/img/results/interface final.png" alt="">
+                  </div>
+                  <br>
+                
+                  <p>
+                    Texture Synthesis: Our Planetary Generation method using Texture Synthesis. The four types of planets from left to right are an Earth-like planet, a Grassland planet,
+                    a Snow planet, and a Desert planet.
+                  </p>
+                </div>
+              </div><!-- End task item -->
+
+              <div class="swiper-slide">
+                <div class="results-item">
+                  <h3>Texture Synthesis Globe Interface</h3>
+                  <h4>Illustrate user control of type of planet generated</h4>
+                  <div>
+                    <div class="row align-items-center">
+                      <img class="col-12" src="./assets/img/results/interface final whole.png" alt="">
+                    </div>
+                  </div>
+                  <br>
+                  <p>
+                    Texture Synthesis: Our globe interface contains four buttons used to set the type of planet that will be generated. An option to load a pre-generated planet or run the texture
+                    synthesis on new input data is available. The globe interface is highly reliable due to its simplicity. We achieve high maintainability for the globe interface as changes and
+                    additions are straightforward using Blender. We have designed the globe interface to ease portability through its simplicity.
+                  </p>
+                </div>
+              </div><!-- End task item -->
+              
+              <div class="swiper-slide">
+                <div class="results-item">
+                  <h3>Texture Synthesis Time Efficiency</h3>
+                  <h4>Graphically illustrates the time efficiency of our Texture Synthesis method for various configurations</h4>
+                  <div>
+                    <div class="row align-items-center">
+                      <img class="col-12" src="./assets/img/results/efficiency.png" alt="" height="500">
+                    </div>
+                  </div>
+                  <br>
+                  <p>
+                    Texture Synthesis: Synthesis times per patch are 1-3 seconds, resulting in synthesis times across
+                    the planet of 2-4 minutes for a 96-faced cube and about 12 minutes for the 384-faced cube. The preprocessing time is significantly
+                    longer as it formulates neighbourhoods for all the pixels in the exemplar. This can result in significant preprocessing time when
+                    extended to the whole planet. Preprocessing takes 45-55 minutes on a 64x64 exemplar of 384 patches and 10-13 minutes on 96 patches.
+                    The above graphic illustrates the overall times for the Texture Synthesis in the "YES" configurations and represents the time taken to populate
+                    the globes in the "NO" configurations.
+                    
+                  </p>
+                </div>
+              </div><!-- End task item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Results Section -->
+
+
+    <!-- ======= Resources Section ======= -->
+    <section id="resources">
+      <div class="container" data-aos="fade-right" data-aos-delay="100">
+
+        <div class="section-title pb-4">
+          <h2>Resources</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+            data-aos-delay="200">
+            <div class="icon-box iconbox-orange w-100">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                  </path>
+                </svg>
+                <i class="bx bx-book"></i>
+              </div>
+              <h4>Literature Reviews</h4>
+              <p>
+                Evaluating Machine Learning and Texture Synthesis approaches for Terrain Generation
+                <br>
+                <br>
+              <div class="row">
+                <div class="col-1"></div>
+                <u class="col-5"><a href="./assets/resources/LNGCHR014_Literature_Review.pdf" target="_blank">Christopher
+                    Langebrink</a></u>
+                <u class="col-5"><a href="./assets/resources/FRSSAM005 Literature Review.pdf" target="_blank">Sam 
+                    Frost</a></u>
+                <div class="col-1"></div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-blue w-100">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                  </path>
+                </svg>
+                <i class="bx bx-file"></i>
+              </div>
+              <h4>Final Papers</h4>
+
+              <p>
+                <u><a
+                    href="./assets/resources/LNGCHR014_Planetary generation and Authoring using Diffusion Models.pdf"
+                    target="_blank">Planetary generation and Authoring using Diffusion Models</a></u>
+                <br>
+                <em>- Christopher Langebrink</em>
+              </p>
+              <br>
+              <p>
+                <u><a href="./assets/resources/FRSSAM005_Planetary_Generation_using_Texture_Synthesis.pdf"
+                    target="_blank">Planetary Generation using Texture Synthesis</a></u>
+                <br>
+                <em>- Sam Frost</em>
+              </p>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-12 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+            data-aos-delay="400">
+            <div class="icon-box iconbox-yellow w-100">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813">
+                  </path>
+                </svg>
+                <i class="bx bx-tachometer"></i>
+              </div>
+              <h4>Shared</h4>
+              <p>
+                Artefacts produced by both authors
+              </p>
+              <br>
+              <div class="row">
+                <div class="col-1"></div>
+                <u class="col-5"><a href="./assets/resources/Evaluating_Texture_Synthesis_and_Diffusion_Models_for_Global_Terrain_Generation.pdf"
+                    target="_blank">Proposal</a></u>
+                <u class="col-5"><a href="./assets/resources/Langebrink_Frost_EarthGen.tif" target="_blank">Poster</a></u>
+                <div class="col-1"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Resources Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Planet Gen</h3>
+      <p>A feature-rich framework for generating planets using diffusion models and texture synthesis models.</p>
+
+      <div class="team row mt-4">
+        <div class="row col-lg-6">
+          <h4 class="col-12">Authors</h4>
+          <div class="col-6">
+            <h5>Christopher Langebrink</h5>
+            <h6>
+              <a href="mailto:lngchr014@myuct.ac.za">lngchr014@myuct.ac.za</a>
+            </h6>
+          </div>
+          <div class="col-6">
+            <h5>Sam Frost</h5>
+            <h6>
+              <a href="mailto:frssam005@myuct.ac.za">frssam005@myuct.ac.za</a>
+            </h6>
+          </div>
+        </div>
+        <div class="row col-lg-6 mt-4 mt-lg-0">
+          <h4 class="col-12">Supervisors</h4>
+          <div class="col-6">
+            <h5>James Gain</h5>
+            <h6>
+              <a href="mailto:jgain@cs.uct.ac.za">jgain@cs.uct.ac.za</a>
+            </h6>
+          </div>
+          <div class="col-6">
+            <h5>Josiah Chavula</h5>
+            <h6>
+              <a href="mailto:josiah.chavula@uct.ac.za">josiah.chavula@uct.ac.za</a>
+            </h6>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="d-flex flex-column align-items-center gap-3 mt-4">
+        <img class="uct-logo" src="./assets/img/uct.svg" alt="">
+        <div class="copyright">
+          &copy; Copyright <strong><span>University of Cape Town</span></strong>. All Rights Reserved
+        </div>
+      </div>
+
+      <div class="credits mt-2">
+        Template by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="./assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="./assets/vendor/aos/aos.js"></script>
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
